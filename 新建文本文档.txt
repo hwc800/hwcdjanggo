@@ -1,0 +1,51 @@
+
+git branch|grep ${Target}     创建分支，grep匹配分支名
+
+git checkout -f ${Target}      强制切换分支，
+
+git fetch && git reset --hard origin/${Branch}      将远程主机的最新内容拉到本地，用户在检查了以后决定是否合并到工作本机分支中
+
+git clone -b ${Branch} git@git.code.oa.com:AGame/AClient_Content.git ${Content}     克隆指定的分支
+
+git lfs prune     从本地存储删除旧的Git LFS文件
+
+git reset --hard c99aa0c   返回到c99aa0c版本
+
+git cherry-pick可以挑选需要的commit合并
+
+git clean -xfd 文件/目录一起删掉 （慎用，一般这个是用来删掉编译出来的 .o之类的文件用的）
+
+git describe产生版本号
+
+git remote add upstream https://github.com/EpicGames/UnrealEngine将Epic Game的基础元库添加为一个新远程，名为“upstream”。
+
+git config --local core.autocrlf false禁用自动转换
+
+git config --local core.eol lf句末只用换行
+
+git rm --cached -r .去掉已经托管在git上的文件
+
+git reset HEAD 是将咱暂存区和HEAD的提交保持一致
+
+git reset --hard HEAD 是将工作区、暂存取和HEAD保持一致
+
+Git log n查看最近n次的提交信息
+
+git remote -v查看远程地址
+
+Git rebase -i使用rebase －i会在终端出现一个交互页面. 在这个交互页面中我们可以对要rebase的commit做一定的修改.
+
+git submodule init初始化公共代码库
+
+git submodule update更新公工代码库
+
+git pull origin master将master远程分支下拉合并到本地origin分支
+
+git lfs install安装lfs
+
+git clean -d -xf
+-f删除目录下文件
+-fd目录和文件一起删掉
+-xfd连.git目录及其文件一起删掉
+
+git version查看git版本
